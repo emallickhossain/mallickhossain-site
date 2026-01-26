@@ -1,0 +1,120 @@
+---
+title: FICA Taxes
+author: Mallick Hossain
+date: '2020-09-07'
+---
+
+Federal income tax rates *decrease* once you make more than \$137,700![^1] Payroll taxes are a fact of life, but one of those taxes often gets less attention than the rest: FICA.[^2] As of 2020, employees contribute 6.2% of their wages to Social Security and 1.45% to Medicare. However, the 6.2% rates apply only to wages up to the "Social Security wage base" (\$137,700 in 2020). This means that 6.2 cents of every dollar earned below \$137,700 goes to Social Security. Any earnings above \$137,700 are **not** subject to the 6.2% tax.
+
+[^1]: Coincidentally, this is quite close to the top 10% of individual incomes.
+
+[^2]: FICA stands for Federal Insurance Contributions Act and these taxes fund Social Security and Medicare.
+
+Put differently, once you exceed the Social Security wage base, your marginal tax rate *drops* from 31.65% to 25.45% (see red line). This is most easily seen with a chart. The below chart illustrates the marginal tax rate for a single filer using the 2020 tax brackets.
+
+```{r, echo=FALSE}
+library(ggplot2)
+library(ggthemes)
+library(data.table)
+library(scales)
+ss <- 0.062
+mcare <- 0.0145
+mcareExtra <- 0.009
+taxes <- data.table(income = c(0, 9875, 
+                               40125, 85525, 
+                               137700, 163300, 
+                               200000, 207350, 
+                               518400, 600000),
+                    taxrate = c(0.1 + ss + mcare, 0.12 + ss + mcare, 
+                                0.22 + ss + mcare, 0.24 + ss + mcare, 
+                                0.24 + mcare, 0.32 + mcare, 
+                                0.32 + mcare + mcareExtra, 0.35 + mcare + mcareExtra,
+                                0.37 + mcare + mcareExtra, 0.37 + mcare + mcareExtra))
+
+ggplot() +
+  geom_step(data = taxes, aes(x = income, y = taxrate)) +
+  geom_line(aes(x = c(137700, 163300), y = c(0.24 + mcare, 0.24 + mcare)), 
+            color = "red") +
+  geom_hline(yintercept = 0, alpha = 0.2) +
+  geom_vline(xintercept = 0, alpha = 0.2) +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  scale_x_continuous(labels = dollar_format(accuracy = 1)) +
+  labs(x = "Income", y = "Marginal Tax Rate") +
+  theme_tufte()
+```
+
+This means that for each dollar between \$137,700 and \$163,300, you actually pay a *lower* marginal tax rate than you do when you make between \$40,126 and \$137,700.
+
+Marginal tax rates are a little confusing, since they are the tax rate applied to an additional dollar that you earn. For a more intuitive illustration, trace out the average taxes rate. For each level of income, the average rate is the share of your income that goes to taxes.
+
+```{r, echo = FALSE, warning=FALSE}
+totalTax <- data.table(income = seq(0, 600000, by = 1))
+totalTax[, "tax" := fcase(income %in% 0:9875, (0.1 + ss + mcare) * income,
+                          income %in% 9876:40125, (0.1 + ss + mcare) * 9875 + 
+                            (0.12 + ss + mcare) * (income - 9875),
+                          income %in% 40126:85525, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (income - 40125),
+                          income %in% 85526:137700, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (85525 - 40126) +
+                            (0.24 + ss + mcare) * (income - 85525),
+                          income %in% 137701:163300, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (85525 - 40126) +
+                            (0.24 + ss + mcare) * (137700 - 85525) +
+                            (0.24 + mcare) * (income - 137700),
+                          income %in% 163301:200000, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (85525 - 40126) +
+                            (0.24 + ss + mcare) * (137700 - 85525) +
+                            (0.24 + mcare) * (163300 - 137700) +
+                            (0.32 + mcare) * (income - 163300),
+                          income %in% 200001:207350, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (85525 - 40126) +
+                            (0.24 + ss + mcare) * (137700 - 85525) +
+                            (0.24 + mcare) * (163300 - 137700) +
+                            (0.32 + mcare) * (200000 - 163300) +
+                            (0.32 + mcare + mcareExtra) * (income - 200000),
+                          income %in% 207351:518400, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (85525 - 40126) +
+                            (0.24 + ss + mcare) * (137700 - 85525) +
+                            (0.24 + mcare) * (163300 - 137700) +
+                            (0.32 + mcare) * (200000 - 163300) +
+                            (0.32 + mcare + mcareExtra) * (207350 - 200000) +
+                            (0.35 + mcare + mcareExtra) * (income - 207350),
+                          income >= 518401, (0.1 + ss + mcare) * 9875 +
+                            (0.12 + ss + mcare) * (40125 - 9876) + 
+                            (0.22 + ss + mcare) * (85525 - 40126) +
+                            (0.24 + ss + mcare) * (137700 - 85525) +
+                            (0.24 + mcare) * (163300 - 137700) +
+                            (0.32 + mcare) * (200000 - 163300) +
+                            (0.32 + mcare + mcareExtra) * (207350 - 200000) +
+                            (0.35 + mcare + mcareExtra) * (518400 - 207350) +
+                            (0.37 + mcare + mcareExtra) * (income - 518400))]
+totalTax[, "avgRate" := tax / income]
+totalTax[is.na(avgRate), "avgRate" := NA]
+
+ggplot() +
+  geom_line(data = totalTax, aes(x = income, y = avgRate)) +
+  geom_line(data = totalTax[income %in% 137701:163300], aes(x = income, y = avgRate),
+            color = "red") +
+  geom_hline(yintercept = 0, alpha = 0.2) +
+  geom_hline(yintercept = totalTax[income == 137700]$avgRate, alpha = 0.2, color = "red") +
+  geom_vline(xintercept = 0, alpha = 0.2) +
+  labs(x = "Income", y = "Average Tax Rate") +
+  scale_y_continuous(labels = percent_format(accuracy = 1)) +
+  scale_x_continuous(labels = dollar_format(accuracy = 1)) +
+  theme_tufte()
+
+```
+
+As before, the red section illustrates that right above the Social Security wage base, you actually receive a *reduction* in your average tax rate when you make between \$137,700 and \$171,275.
+
+This is an interesting kink in the tax code that I was not aware of previously. This kink has interesting economic implications. In particular, if a worker found it worth their time to work under a 31.65% marginal tax rate, they should be willing to work just as much (and probably more) when their marginal tax rate suddenly drops to 25.45% because they can keep more of their wages. This intuition means that if we examined the distribution of annual income, we might expect to see a sudden drop in the share of workers earning between \$137,700 and \$171,275. However, this drop may not be easily seen in aggregate statistics for a few reasons. First, workers do not often have such fine control over their schedule and wages, so they cannot easily increase or decrease their total income, especially if they are salaried. Second, most workers (like myself) may not even be aware that such a kink exists in the tax code.[^3] However, there is one group that may be well positioned to respond to these incentives: self-employed business owners.
+
+[^3]: Honestly, I assumed everyone paid FICA, regardless of income.
+
+In particular, self-employed business owners have better control over how much income they receive in salary (subject to FICA, Medicare, and income taxes) versus through "pass-through" profits (subject to income taxes). In all likelihood, if they can finely tune how their income is split between salary and profits, they would probably pay up to the Social Security wage base (to max out Social Security benefits) and then take any remaining income as profits, to avoid the extra 1.45% Medicare tax. While I do not have the tax data to test this hypothesis, it does seem to be a likely outcome for someone who can exert control over their wages and has a savvy accountant.

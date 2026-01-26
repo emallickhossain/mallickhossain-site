@@ -1,0 +1,26 @@
+{
+  "teaching.qmd": {
+    "teaching.html": "ac7914be"
+  },
+  "blog.qmd": {
+    "blog.html": "2fc6e8b5"
+  },
+  "research.qmd": {
+    "research.html": "8ff63684"
+  },
+  "index.qmd": {
+    "index.html": "6aa32ad8"
+  },
+  "posts/2020-08-15-fica-taxes/2020-08-15-fica-taxes.Rmd": {
+    "2020-08-15-fica-taxes.html": "61266c6e"
+  },
+  "posts/2020-08-15-fica-taxes/index.qmd": {
+    "index.html": "b585abd0"
+  },
+  "posts/2020-08-02-identification2/index.qmd": {
+    "index.html": "729c099a"
+  },
+  "posts/2020-08-01-Identification1/index.qmd": {
+    "index.html": "72eb8b85"
+  }
+}
