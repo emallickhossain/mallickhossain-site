@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Mallick Hossain</title>
+<link>https://emallickhossain.github.io/mallickhossain-site/blog.html</link>
+<atom:link href="https://emallickhossain.github.io/mallickhossain-site/blog.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.8.25</generator>
+<lastBuildDate>Mon, 07 Sep 2020 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>FICA Taxes</title>
+  <dc:creator>Mallick Hossain</dc:creator>
+  <link>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Federal income tax rates <em>decrease</em> once you make more than $137,700!<sup>1</sup> Payroll taxes are a fact of life, but one of those taxes often gets less attention than the rest: FICA.<sup>2</sup> As of 2020, employees contribute 6.2% of their wages to Social Security and 1.45% to Medicare. However, the 6.2% rates apply only to wages up to the “Social Security wage base” ($137,700 in 2020). This means that 6.2 cents of every dollar earned below $137,700 goes to Social Security. Any earnings above $137,700 are <strong>not</strong> subject to the 6.2% tax.</p>
+<p>Put differently, once you exceed the Social Security wage base, your marginal tax rate <em>drops</em> from 31.65% to 25.45% (see red line). This is most easily seen with a chart. The below chart illustrates the marginal tax rate for a single filer using the 2020 tax brackets.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>This means that for each dollar between $137,700 and $163,300, you actually pay a <em>lower</em> marginal tax rate than you do when you make between $40,126 and $137,700.</p>
+<p>Marginal tax rates are a little confusing, since they are the tax rate applied to an additional dollar that you earn. For a more intuitive illustration, trace out the average taxes rate. For each level of income, the average rate is the share of your income that goes to taxes.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>As before, the red section illustrates that right above the Social Security wage base, you actually receive a <em>reduction</em> in your average tax rate when you make between $137,700 and $171,275.</p>
+<p>This is an interesting kink in the tax code that I was not aware of previously. This kink has interesting economic implications. In particular, if a worker found it worth their time to work under a 31.65% marginal tax rate, they should be willing to work just as much (and probably more) when their marginal tax rate suddenly drops to 25.45% because they can keep more of their wages. This intuition means that if we examined the distribution of annual income, we might expect to see a sudden drop in the share of workers earning between $137,700 and $171,275. However, this drop may not be easily seen in aggregate statistics for a few reasons. First, workers do not often have such fine control over their schedule and wages, so they cannot easily increase or decrease their total income, especially if they are salaried. Second, most workers (like myself) may not even be aware that such a kink exists in the tax code.<sup>3</sup> However, there is one group that may be well positioned to respond to these incentives: self-employed business owners.</p>
+<p>In particular, self-employed business owners have better control over how much income they receive in salary (subject to FICA, Medicare, and income taxes) versus through “pass-through” profits (subject to income taxes). In all likelihood, if they can finely tune how their income is split between salary and profits, they would probably pay up to the Social Security wage base (to max out Social Security benefits) and then take any remaining income as profits, to avoid the extra 1.45% Medicare tax. While I do not have the tax data to test this hypothesis, it does seem to be a likely outcome for someone who can exert control over their wages and has a savvy accountant.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Coincidentally, this is quite close to the top 10% of individual incomes.↩︎</p></li>
+<li id="fn2"><p>FICA stands for Federal Insurance Contributions Act and these taxes fund Social Security and Medicare.↩︎</p></li>
+<li id="fn3"><p>Honestly, I assumed everyone paid FICA, regardless of income.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/</guid>
+  <pubDate>Mon, 07 Sep 2020 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Identification Pitfalls (Identification 2)</title>
+  <dc:creator>Mallick Hossain</dc:creator>
+  <link>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-02-identification2/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>In the last lecture, we discussed the intuition for how to identify preference parameters of a utility function. We briefly touched on the importance of stepping back from your identified model to see if the model actually makes sense or if there is something important that is missing. We highlighted one important omission from Alice’s price/size/brand utility function and we will spend this lecture exploring the underlying assumptions and insights.</p>
+</section>
+<section id="missing-stuff" class="level1">
+<h1>Missing “Stuff”</h1>
+<p>In the last lecture, we were estimating the following utility function:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Bequation%7D%0Au_%7Bij%7D%20=%20%5Calpha%20p_j%20+%20%5Cbeta%20size_j%20+%20%5Cgamma%20B_j%20+%20%5Cepsilon_%7Bij%7D%0A%5Cend%7Bequation%7D"></p>
+<p>This function assumes that the only characteristics driving choice are a product’s price, size, and brand. Everything else is noise. However, this immediately leaves out probably the most important reason why people buy big packages, namely, you get more “stuff” to consume. People buy gallons of milk instead of 8oz bottles because they prefer more milk to less, not because they like a big jug instead of a tiny bottle. Our utility function does not capture that fact, and, while well identified, probably not a good model. We can do better.</p>
+<p>Before we correct for this omission, let’s think carefully about what this would mean for our current model.<sup>1</sup></p>
+<p>To give us a starting point, let’s make the (seemingly obvious) assumption that people prefer more stuff to less. How would this manifest itself in our model?<sup>2</sup> More stuff likely comes in bigger packages and likely costs more. Therefore, if people are buying bigger or more expensive things because they have more “stuff”, then we are likely thinking people’s preference for price or size is more positive than it should be.<sup>3</sup> In some extreme cases, this preference might be so strong as to actually manifest itself as a positive preference for price or size. Then we could be making an unrealistic conclusion that households actually prefer expensive items or humongous packages.</p>
+<p>If you care about accurately estimating price sensitivity or size preference, then this is bad news and you will want to correct it. How can this be appropriately corrected? The easiest way is to directly control for the actual quantity of the product. Let’s rewrite our utility function:</p>
+<p><img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Bequation%7D%0Au_%7Bij%7D%20=%20%5Calpha%20p_j%20+%20%5Cbeta%20size_j%20+%20%5Cgamma%20B_j%20+%20%5Cdelta%20q_j%20+%20%5Cepsilon_%7Bij%7D%0A%5Cend%7Bequation%7D"></p>
+<p>Great! Now we are directly letting utility be a function of quantity as well as price and size. Taking a quick tally of equations and parameters, if we only have 2 brands and 2 discrete sizes, then we have a grand total of 4 parameters to estimate! Unfortunately, 2 brands and 2 sizes only gives us 3 equations. We would need at least 2 brands and 3 sizes to be exactly identified and more sizes would make us be over-identified. Given typical product assortments, that is a quite realistic dataset to have.</p>
+<p>Is it as simple as that? Well, almost. Once again, this all comes back to econometric fundamentals. Mathematically, it seems like this should all work out cleanly and identification is assured. We had an omitted variable, we added it to our regression, so we have fixed one problem. We checked that we have identification. What could we be missing? In most scenarios, we would be okay, but in this particular one, we have made a mistake. In particular, we have to check for multicollinearity. That would kill our identification no matter how much data we had. In particular, we should be worried about the correlation between a package size and its quantity. In many instances, these will be highly correlated.<sup>4</sup></p>
+<p>For a wide range of products, the strength of this correlation would kill any hope for disentangling size preferences from quantity preferences. And the importance of quantity preferences means that you would have to include it in the utility function. This may be a rare case in that most discrete choice models can safely ignore quantities if consumers are choosing 1 out of an assortment of products where quantity does not matter (i.e.&nbsp;cameras, cell phones, etc.). In these cases, quantity is essentially controlled for because there is no quantity difference between the products (e.g.&nbsp;Nikon doesn’t have a different quantity of “camera” than a Canon). The other cases basically assume that size is not an important feature and can be safely ignored (e.g.&nbsp;size is not the reason why a household buys 1 yogurt instead of 5 yogurts). Regardless of if you think this is an important feature to model, it illustrates an important part of model development and the potential pitfalls you must be aware of as an economist.</p>
+</section>
+<section id="fixing-stuff" class="level1">
+<h1>Fixing “Stuff”</h1>
+<p>How do we solve this impasse? We need to include both quantity and physical size, but we risk identification problems from multicollinearity. One possibility is that you stop here and find a different research question.<sup>5</sup> The other possibility is to think carefully about how to separate these two features. We need something that will effectively separate the physical size of a product from the actual quantity inside. Thinking carefully, there are a couple of possibilities. First, are there instances where the same package has different amounts of “stuff”? Actually, yes! And there are 2 different ways to get at it. The first possibility is realize that the same package might be very different for different households. For example, a 20-pound bag of rice is the same size package to a single household compared to a family of 4. However, these are very different quantities if we measure quantity by how long the package will last, which is arguably the more relevant measure for various food products. This provides the necessary variation to identify size preferences. The intuition is as follows: we compare the shares of the same product bought by big households and by small households. This is the same product, so the brand, size, and price are all the same. The only difference that could generate different purchasing between big and small households is that the product will last for different times for each household. It is important to note that this identification rests on the assumption that big and small households have the same preferences over size. If there are differences in their size preferences, all of this breaks down.</p>
+<p>Can we identify the size preference without resorting to consumer-level data? Yes! The secret is to find products that break this high correlation. For any kind of food product, this is immensely difficult, but if you search more widely, you can find good candidates. The cleaning aisle of your favorite store is probably the easiest place to start. Why? These products often break the size/quantity link by offering various concentrations of their product.<sup>6</sup> Given the wide range of concentrations available, there can be different “quantities” crammed into the same 32oz container. This breaks strong multicollinearity and recovers identification. However, this identification strategy requires that prices be nonlinear in quantities. If prices are linear, then you have exactly the same multicollinearity problem as before, except between prices and quantities instead of between quantities and sizes. The good news is that this happens quite often in a variety of settings because these kinds of products tend to exhibit bulk discounts which induce exactly the nonlinear price schedule needed to avoid multicollinearity.</p>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<p>In this lecture, we have outlined the other checks that you must do as a researcher to ensure that your identification strategy will work. Even after ensuring your model is “theoretically” identified by accounting for equations and unknowns, you must put on your economist hat and your econometrician hat. As an economist, you must check that your model is capturing the kinds of variation that you want to explain and understand and that you are not omitting major features that will bias your results. As an econometrician, you should be careful about how your variables are related to avoid potential multicollinearity. One looming risk that we did not discuss is endogeneity. This will be covered in a future lecture.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Arguably, the following paragraph is probably one of the most important skills of an economist and for you on the job market. Honestly, everyone knows your model is not perfect and probably pretty bad. You probably know your model is not perfect and pretty bad. However, it is good for something. You need to know what that something is. Also, people are going to ask why your model doesn’t reflect the real world, often by giving some personal story. In most cases (assuming you’ve done some decently careful work on your own model), they are not asking you to add in their particular feature into your model. And you probably should not if your object of interest is something very different. However, what they are asking is for you to have carefully thought about how that omission could affect your model. Will it weaken your results? If so, then assuming you got something significant, then you have still demonstrated your story has value. Will it bias your results upward? Then you might be getting significance where there is none. You would want to think carefully about how strong this bias might be, or maybe this is a case where you should directly incorporate this feature into your model to remove the risk of identifying something that is not there. This is an extremely valuable skill to have and not one explicitly taught in graduate school.↩︎</p></li>
+<li id="fn2"><p>Yes, the following intuition is just a discussion of omitted variable bias. You will never escape it.↩︎</p></li>
+<li id="fn3"><p>To the extent that both of these coefficients are likely negative, this would be downward biasing our results, because it is making the absolute magnitude smaller. However, it is pushing our results upward from a more negative number. Remember a smaller negative is a bigger number.↩︎</p></li>
+<li id="fn4"><p>Actually, using some basic physics/chemistry, you can construct the exact relationship. An object’s <em>density</em> is defined as its mass per unit volume (<img src="https://latex.codecogs.com/png.latex?%5Crho%20=%20%5Cfrac%7Bm%7D%7BV%7D">). Density is an unchanging physical property of an object, so the relationship between the quantity of an object, or its mass is just the density times the volume. Put in our economic notation, <img src="https://latex.codecogs.com/png.latex?q%20=%20%5Crho%20*%20V">. Here we actually have perfect multicollinearity. If we were buying blocks of gold, this would be the case. For other products, there is often some kind of packaging that doesn’t scale precisely with the quantity, but it would be close enough to generate a highly correlated relationship.↩︎</p></li>
+<li id="fn5"><p>This is an important skill to have. While painful, you should try to kill your ideas as quickly as possible. If it survives, then it’s probably a good one to research.↩︎</p></li>
+<li id="fn6"><p>This breaks the “density” equation that I outlined in an earlier footnote because more concentrated soaps pack more “cleaning power” per milliliter. For foods, it’s near-impossible to pack more “apple” into an apple (i.e.&nbsp;cramming 2 pounds of apple into 1 pound is impossible.). Different cuts of meat kind of break this, but then you have to deal with how the different cuts are of varying quality or require different amounts of work. For example, chicken thighs and boneless chicken thighs may weigh the same but have different quantities of meat. Boneless thighs take less work to prepare and cook though. This should still be identified though.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-02-identification2/</guid>
+  <pubDate>Sun, 02 Aug 2020 04:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Identification and Prices (Identification 1)</title>
+  <dc:creator>Mallick Hossain</dc:creator>
+  <link>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-01-Identification1/</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="introduction" class="level1">
+<h1>Introduction</h1>
+<p>Identification is the most fundamental aspect of empirical research. However, the intuition is not simple to develop and requires a careful thought process and approach. The most valuable tool to have is the patience to work through simple examples and then carefully think of how to apply the strategy to your specific example. Today’s example will walk through the intuition and math behind identifying consumer preferences over product characteristics. We will specifically focus on preferences over price and size.</p>
+</section>
+<section id="model" class="level1">
+<h1>Model</h1>
+<p>Most papers/textbooks/lectures will start with a toy model and everything falls out of the model naturally. While that approach is elegant and clearly illustrates how a specific thing is identified, it can be less helpful because it is a retrospective verification study as opposed to a bottom-up development that illustrates the proper thought process. While messier, I think it is more informative to start with one of two approaches: (a) start with a setting and see what can be identified and grow from there or (b) given a goal, identify the ideal experiment to estimate it and then working from the ideal experiment to the real world. We will focus on approach (a) in this lecture. (b) will be saved for a future lecture.</p>
+<p>Consider the following: Alice is really interested in understanding how consumers trade-off a product’s price against its size. She has a large amount of shopping data, so it seemed obvious that she could identify this parameter. After all, she could see thousands of households make many choices across a variety of stores over time in a variety of markets across a variety of products. Variation was coming from everywhere! At least one of those had to identify what she needed. However, she had not carefully thought about the source of his identification, so maybe she was right, or maybe not and any identification was just coming from random noise. She could not tell the difference.</p>
+<p>Today, we are focusing on fundamentally understanding what can be identified given a particular setting. Alice’s intuition was that looking at a single store and observing consumer choices across different brands and sizes had to buy her something! Let’s start there.</p>
+<p>First, let’s start with a basic representation of a consumer’s utility. The consumer (<img src="https://latex.codecogs.com/png.latex?i">) cares about the price, size, and brand of a product (<img src="https://latex.codecogs.com/png.latex?j">).</p>
+<img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Bequation%7D%0Au_%7Bij%7D%20=%20%5Calpha%20p_j%20+%20%5Cbeta%20size_j%20+%20%5Cgamma%20B_j%20+%20%5Cepsilon_%7Bij%7D%0A%5Cend%7Bequation%7D">
+<p>This step is crucial, even though it might seem trivial. Writing this down clearly illustrates how many unknowns you are trying to estimate. At the end of the day, an identified model is one that can be solved mathematically, and from math, we know that you can only solve for as many unknowns as you have equations. Hence, we will need at least 3 equations to get our 3 parameters.<sup>1</sup></p>
+</section>
+<section id="setting" class="level1">
+<h1>Setting</h1>
+<p>The goal of this section is to build, step-by-step, the intuition of exactly what identifies different aspects of the model. This section is also meant to illustrate the value of starting with a simple model. Most students (the authors included!) are seduced by wanting to skip to the most technical, flashy, and complex models. Don’t! Start simple, figure out what you need and stop…or keep going.<sup>2</sup> It’s up to you.<sup>3</sup></p>
+<section id="attempt-1-1-product-2-sizes" class="level2">
+<h2 class="anchored" data-anchor-id="attempt-1-1-product-2-sizes">Attempt 1: 1 Product, 2 Sizes</h2>
+<p>Let’s start with the most simple setting. We care about price and size, so what could we figure out if there was 1 product sold in 2 different sizes at the store? What is the intuition here? We see some customers buying the big size and some buying the small size. There is only one type of variation here. Some buy big and some buy small. We cannot identify 2 parameters off of 1 type of variation. Another way to think about this is by considering competing explanations. Alice thinks people are highly sensitive to price and less sensitive to size. Bob thinks the opposite. Simply seeing some customers buy big sizes and some buy small sizes does not give us enough information to figure out which explanation is right.<sup>4</sup></p>
+<p>The takeaway from this is that there is only one source of variation, the choice between large and small. That’s not enough to get size and price preferences.</p>
+</section>
+<section id="attempt-2-2-products-2-sizes" class="level2">
+<h2 class="anchored" data-anchor-id="attempt-2-2-products-2-sizes">Attempt 2: 2 Products, 2 Sizes</h2>
+<p>Let’s add some more information and see if we can do any better in this case. Instead of 1 product, let’s have 2 products: Brand A and Brand B. Each offers 2 sizes. Immediately, we might be worried because by adding a new brand, we have to now worry about a brand preference in addition to our size and price preferences. Do we have enough variation? Let’s see what kinds of variation we can deal with. To help, let’s look at the illustration:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th></th>
+<th>Brand A</th>
+<th>Brand B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Large</td>
+<td><img src="https://latex.codecogs.com/png.latex?p_%7BAL%7D"></td>
+<td><img src="https://latex.codecogs.com/png.latex?p_%7BBL%7D"></td>
+</tr>
+<tr class="even">
+<td>Size</td>
+<td><img src="https://latex.codecogs.com/png.latex?p_%7BAS%7D"></td>
+<td><img src="https://latex.codecogs.com/png.latex?p_%7BBS%7D"></td>
+</tr>
+</tbody>
+</table>
+<p>Each product has a price and a size and we observe customers making choices of various products. What variation do we have?</p>
+<ul>
+<li>For customers choosing brand A, we see some picking large and some picking small. Same for brand B. This is the variation the columns of the table.</li>
+<li>For customers choosing Large, we see some choosing brand A and some choosing brand B. Same for Small sizes. This is the variation in the rows of the table.</li>
+</ul>
+<p>Are we stuck? It looks like we only have 2 kinds of variation and we have 3 unknowns. Not yet! Remember that we got stuck in the first case because we could not distinguish between price and size preferences given only 1 brand. We actually haven’t fully utilized the fact that we have 2 brands offering the same sizes. In particular, the final piece of variation is the variation in the differences between how brand A customers choose between sizes and how brand B customers choose between sizes. Alternatively, the same variation is captured in looking at the differences between how Large customers pick between brands and comparing that to how Small customers pick between brands.</p>
+<p>Here is an illustration. If we see twice as many people choosing Large A compared to Small A, then that suggests that people prefer larger sizes. However, if we see three times as many people choosing Large B compared to Small B, then this suggests there is something else going on. If everything was about size preferences, then within a brand, we would expect to see similar sorting. The difference in sorting must be due to either something different in how the products are priced. That’s using the differences between sizes within brands (comparing differences of the columns).</p>
+<p>The alternative approach is to look at differences between brands within sizes (comparing differences of the rows). These give you the same answer, so it’s a matter of preference and interpretation. In this case, you look at Large customers and see that twice as many are buying Brand A compared to Brand B. This suggests a strong preference for brand A. For Small customers, if three times as many people are buying brand A as brand B, this must be due to something besides brand preferences, namely price.</p>
+<section id="solving-for-the-price-parameter" class="level3">
+<h3 class="anchored" data-anchor-id="solving-for-the-price-parameter">Solving for the Price Parameter</h3>
+<p>Let’s work through the math and the intuition step by step. First off, we might think that we have 4 equations since there are 4 products.<sup>5</sup></p>
+<img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Bequation%7D%0A%5Cbegin%7Baligned%7D%5Bc%5D%0AS_%7BAL%7D%20&amp;=%20%5Cfrac%7B%5Cexp(V_%7BAL%7D)%7D%7B%5Csum_J%20%5Cexp(V_j)%7D%0A%5C%5C%0A%5C%5C%0AS_%7BBL%7D%20&amp;=%20%5Cfrac%7B%5Cexp(V_%7BBL%7D)%7D%7B%5Csum_J%20%5Cexp(V_j)%7D%0A%5Cend%7Baligned%7D%0A%5Cqquad%0A%5Cbegin%7Baligned%7D%5Bc%5D%0AS_%7BAS%7D%20&amp;=%20%5Cfrac%7B%5Cexp(V_%7BAS%7D)%7D%7B%5Csum_J%20%5Cexp(V_j)%7D%0A%5C%5C%0A%5C%5C%0AS_%7BBS%7D%20&amp;=%20%5Cfrac%7B%5Cexp(V_%7BBS%7D)%7D%7B%5Csum_J%20%5Cexp(V_j)%7D%0A%5Cend%7Baligned%7D%0A%5Cend%7Bequation%7D">
+<p>where <img src="https://latex.codecogs.com/png.latex?V_j%20=%20%5Calpha%20p_%7Bj%7D%20+%20%5Cbeta%20size_%7Bj%7D%20+%20%5Cgamma%20B_%7Bj%7D"> is the deterministic part of the utility function.</p>
+<p>4 equations and 3 unknowns! Looks like we’re over-identified! Actually, we are not. We only have 3 equations. Why? Since we are looking at market shares, once you know 3 of them, you can determine the last one since all the shares have to add up to 1. 3 equations and 3 unknowns. We are still able to solve this system.</p>
+<p>All of the above intuition was focused on the difference in market shares, so let’s construct those differences. Since we have a lot of exponentials floating around, we will look at the difference in log shares instead to make things much nicer.</p>
+<p>We will construct the difference in log shares for each size of Brand A:</p>
+<img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Balign%7D%0A%5Clog(S_%7BAL%7D)%20&amp;-%20%5Clog(S_%7BAS%7D)%20=%20V_%7BAL%7D%20-%20V_%7BAS%7D%0A%5C%5C%0A&amp;=%20(%5Calpha%20p_%7BAL%7D%20+%20%5Cbeta%20size_%7BAL%7D%20+%20%5Cgamma%20B_%7BAL%7D)%20-%20(%5Calpha%20p_%7BAS%7D%20+%20%5Cbeta%20size_%7BAS%7D%20+%20%5Cgamma%20B_%7BAS%7D)%0A%5C%5C%0A&amp;=%20(%5Calpha%20p_%7BAL%7D%20+%20%5Cbeta%20size_%7BAL%7D)%20-%20(%5Calpha%20p_%7BAS%7D%20+%20%5Cbeta%20size_%7BAS%7D)%20%5Cquad%20%5Ctext%7Bbrand%20cancels%7D%0A%5C%5C%0A&amp;=%20%5Calpha%20(p_%7BAL%7D%20-%20p_%7BAS%7D)%20+%20%5Cbeta%20(size_%7BAL%7D%20-%20size_%7BAS%7D)%0A%5Cend%7Balign%7D">
+<p>By looking at the shares within a brand, the brand preference cancels out leaving us with only 2 parameters. What’s the 2nd equation that will help us solve? We just do this for brand B:</p>
+<img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Balign%7D%0A%5Clog(S_%7BBL%7D)%20&amp;-%20%5Clog(S_%7BBS%7D)%20=%20V_%7BBL%7D%20-%20V_%7BBS%7D%0A%5C%5C%0A&amp;=%20(%5Calpha%20p_%7BBL%7D%20+%20%5Cbeta%20size_%7BBL%7D%20+%20%5Cgamma%20B_%7BBL%7D)%20-%20(%5Calpha%20p_%7BBS%7D%20+%20%5Cbeta%20size_%7BBS%7D%20+%20%5Cgamma%20B_%7BBS%7D)%0A%5C%5C%0A&amp;=%20(%5Calpha%20p_%7BBL%7D%20+%20%5Cbeta%20size_%7BBL%7D)%20-%20(%5Calpha%20p_%7BBS%7D%20+%20%5Cbeta%20size_%7BBS%7D)%20%5Cquad%20%5Ctext%7Bbrand%20cancels%7D%0A%5C%5C%0A&amp;=%20%5Calpha%20(p_%7BBL%7D%20-%20p_%7BBS%7D)%20+%20%5Cbeta%20(size_%7BBL%7D%20-%20size_%7BBS%7D)%0A%5Cend%7Balign%7D">
+<p>By squinting just a little, we know that both brands offer the same sizes, so by taking the difference of these two equations, the <img src="https://latex.codecogs.com/png.latex?%5Cbeta"> term will cancel out leaving us with an equation related the share differences to the price differences which gives us the identification of the price parameter.</p>
+<img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Balign%7D%0A%5B%20%5Clog(S_%7BAL%7D)%20&amp;-%20%5Clog(S_%7BAS%7D)%20%5D%20-%20%5B%20%5Clog(S_%7BBL%7D)%20-%20%5Clog(S_%7BBS%7D)%20%5D%20=%0A%5C%5C%0A%5Calpha%20%5B%20(p_%7BAL%7D%20&amp;-%20p_%7BAS%7D)%20-%20(p_%7BBL%7D%20-%20p_%7BBS%7D)%20%5D%0A%5Cend%7Balign%7D">
+<p>While the above looks a little messy, remember the intuition. The left-hand side has 2 terms. The first is the difference in shares between large and small sizes of brand A. The second is the difference in large and small shares for brand B. If these shares are different (e.g.&nbsp;2x people prefer large A to small A while 3x people prefer large B to small B), then something must be generating this. It can’t be brand because that would not affect the relative shares within a particular brand. It can’t be size since we’re looking at the same sizes choices across brands. That leaves us only with price. These products must be priced in a certain way that is generating this pattern. That is what the right hand side is saying. This differential sorting must be driven by the difference in the difference of prices between the sizes. Put in more concrete terms, if the large size only cost $1 more for both brands, then the RHS is 0 and we are stuck. This also fits intuition. If we saw the sorting described above (2x people like Large A compared to Small A versus 3x people preferring Large B to Small B), we would think it has to be that large B is a better deal compared to small B. Maybe large B only costs $0.50 more which makes it more attractive to customers that like B. If it’s cheaper to up-size in B compared to A, that would explain why there is this discrepancy in the size popularity between brands.</p>
+</section>
+<section id="solving-for-size-parameter" class="level3">
+<h3 class="anchored" data-anchor-id="solving-for-size-parameter">Solving for Size Parameter</h3>
+<p>Now that we have solved for our price parameter <img src="https://latex.codecogs.com/png.latex?%5Calpha">, we can solve for the remaining parameters. While this is just math, we think it is important to develop the intuition of why this works. If we look at the relative shares of the large and small size within a brand, this will give us our size parameter. Think of it in the following way: if we know a person’s price sensitivity, then we can predict how they would choose between the large and small product based on the price. If they deviate from that prediction in a systematic way, the only explanation is that they prefer one size over the other. The difference between our predicted shares based only on the price and the actual shares tells us how customers value price.</p>
+</section>
+<section id="solving-for-brand-preference" class="level3">
+<h3 class="anchored" data-anchor-id="solving-for-brand-preference">Solving for Brand Preference</h3>
+<p>We can also solve for brand preference but by looking at the difference in shares between brands within a particular size. Given prices, we can predict how consumers will choose between large A and large B or small A and small B. To the extent that they deviate systematically from this prediction, that could only be attributed to preferences over the brands.</p>
+</section>
+</section>
+<section id="attempt-3-x-brands-y-sizes" class="level2">
+<h2 class="anchored" data-anchor-id="attempt-3-x-brands-y-sizes">Attempt 3: X Brands, Y Sizes</h2>
+<p>We showed that in our 2x2 case, we were exactly identified and we walked through the intuition of what kind of variation is identifying each parameter. What happens if we increase the number of sizes offered? What about if we increase the number of brands? As is our theme, let’s think very carefully about what are the good and bad things when we do this. At the core, we need to be highly aware of how many parameters we are estimating and how many equations we have.</p>
+<p>Starting with equations, in a general sense, how many equations will we have if we have X brands and Y sizes? Using the same logic as above, we will have <img src="https://latex.codecogs.com/png.latex?X%20*%20Y"> market share equations. However, since they must sum to 1, we only have <img src="https://latex.codecogs.com/png.latex?X%20*%20Y%20-%201"> equations that can be used to solve for our parameters. In our 2x2 case, that meant we had 3 equations to use. Once we have our equations, the solution is algebra. We used the differences above to better highlight the intuition behind each parameter.</p>
+<p>What about parameters? This is where we have to be careful and this is where deciding between discrete or continuous variables can get you into trouble. Let’s start by looking at price. It makes sense that price is a continuous variable. Therefore, no matter how many products we have, each one has some price which is continuous. Therefore, there is only one price parameter to estimate, no matter whether we grow the number of products or the number of firms.<sup>6</sup></p>
+<p>What about size? If we are modeling it as a continuous variable, like weight or volume, then we only have 1 parameter no matter the number of products. However, if sizes are discretized, like we had in our example, then you will have <img src="https://latex.codecogs.com/png.latex?Y%20-%201"> different parameters to estimate. The same holds true for brand, though you would be hard-pressed to argue that this should be continuous. Brand makes most sense as a discrete variable. Therefore, you will have <img src="https://latex.codecogs.com/png.latex?X%20-%201"> different brand parameters to estimate.</p>
+<section id="cases" class="level3">
+<h3 class="anchored" data-anchor-id="cases">Cases</h3>
+<p>Let’s do the accounting for our 2x2 exercise and then expand it to see how things grow as we grow different dimensions of the space.</p>
+<ul>
+<li><em>Continous price, continous size, discrete brand</em>
+<ul>
+<li>3 equations (2 * 2 - 1 = 3)</li>
+<li>3 parameters: 1 price parameter, 1 size parameter, 1 brand parameter</li>
+<li>Exactly identified</li>
+</ul></li>
+<li><em>Continous price, discrete size, discrete brand</em>
+<ul>
+<li>3 equations (2 * 2 - 1 = 3)</li>
+<li>3 parameters: 1 price parameter, 1 size parameter, 1 brand parameter</li>
+<li>Exactly identified</li>
+</ul></li>
+</ul>
+<p>Let’s look at 3 sizes</p>
+<ul>
+<li><em>Continous price, continous size, discrete brand</em>
+<ul>
+<li>5 equations (2 * 3 - 1 = 5)</li>
+<li>3 parameters: 1 price parameter, 1 size parameter, 1 brand parameter</li>
+<li>Over-identified</li>
+</ul></li>
+<li><em>Continous price, discrete size, discrete brand</em>
+<ul>
+<li>5 equations (2 * 3 - 1 = 5)</li>
+<li>4 parameters: 1 price parameter, 2 size parameters, 1 brand parameter</li>
+<li>Over-identified</li>
+</ul></li>
+</ul>
+<p>Y sizes</p>
+<ul>
+<li><em>Continous price, continous size, discrete brand</em>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?2Y%20-%201"> equations</li>
+<li>3 parameters: 1 price parameter, 1 size parameter, 1 brand parameter</li>
+<li>Over-identified as long as <img src="https://latex.codecogs.com/png.latex?Y%20%3E%202"></li>
+</ul></li>
+<li><em>Continous price, discrete size, discrete brand</em>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?2Y%20-%201"> equations</li>
+<li><img src="https://latex.codecogs.com/png.latex?Y%20+%201"> parameters: 1 price parameter, Y-1 size parameters, 1 brand parameter</li>
+<li>Over identified as long as <img src="https://latex.codecogs.com/png.latex?Y%20%3E%202"></li>
+</ul></li>
+</ul>
+<p>Just looking at sizes illustrates an important fact: continuous variables do not scale with the space, only discrete variables do.</p>
+<p>What if we have 3 brands and Y sizes?</p>
+<ul>
+<li><em>Continous price, continous size, discrete brand</em>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?3Y%20-%201"> equations</li>
+<li>4 parameters: 1 price parameter, 1 size parameter, 2 brand parameters</li>
+<li>Over-identified as long as <img src="https://latex.codecogs.com/png.latex?Y%20%3E%201"></li>
+</ul></li>
+<li><em>Continous price, discrete size, discrete brand</em>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?3Y%20-%201"> equations</li>
+<li><img src="https://latex.codecogs.com/png.latex?Y%20+%202"> parameters: 1 price parameter, Y-1 size parameters, 2 brand parameters</li>
+<li>Over identified as long as <img src="https://latex.codecogs.com/png.latex?Y%20%3E%203">. Exactly identified if Y = 3.</li>
+</ul></li>
+</ul>
+<p>What about X brands and Y sizes?</p>
+<ul>
+<li><em>Continous price, continous size, discrete brand</em>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?X%20*%20Y%20-%201"> equations</li>
+<li><img src="https://latex.codecogs.com/png.latex?X%20+%201"> parameters: 1 price parameter, 1 size parameter, X - 1 brand parameters</li>
+</ul></li>
+</ul>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>X (brands)</th>
+<th>Y (size)</th>
+<th>Identification</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?%5Cforall%20X"></td>
+<td>1</td>
+<td>Not identified</td>
+</tr>
+<tr class="even">
+<td>1</td>
+<td>2</td>
+<td>Not identified</td>
+</tr>
+<tr class="odd">
+<td>1</td>
+<td>3</td>
+<td>Exactly identified</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2</td>
+<td>Exactly identified</td>
+</tr>
+<tr class="odd">
+<td><img src="https://latex.codecogs.com/png.latex?%5Cgeq%202"></td>
+<td><img src="https://latex.codecogs.com/png.latex?%3E2"></td>
+<td>Over-identified</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><em>Continous price, discrete size, discrete brand</em>
+<ul>
+<li><img src="https://latex.codecogs.com/png.latex?X%20*%20Y%20-%201"> equations</li>
+<li><img src="https://latex.codecogs.com/png.latex?X%20+%20Y%20-%201"> parameters: 1 price parameter, Y-1 size parameters, X-1 brand parameters</li>
+<li>If <img src="https://latex.codecogs.com/png.latex?X%20=%201"> or <img src="https://latex.codecogs.com/png.latex?Y%20=%201">, not identified</li>
+<li>If <img src="https://latex.codecogs.com/png.latex?X%20=%202"> and <img src="https://latex.codecogs.com/png.latex?Y%20=%202">, exactly identified</li>
+<li>If <img src="https://latex.codecogs.com/png.latex?X%20%5Cgeq%202"> and <img src="https://latex.codecogs.com/png.latex?Y%20%5Cgeq%202">, over-identified</li>
+</ul></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<p>We have walked through how to carefully think about identification in a discrete choice setting. While the intuition will take much practice and patience to fully internalize, we have tried to lay the groundwork for how to approach these kinds of problems. On one level, it is just an accounting exercise keeping track of the number of equations and parameters. However, that over-simplifies the problem because the obstacles and mis-steps can be subtle. Keeping track of equations is relatively straightforward because it is the number of products minus 1 to allow for the fact that all shares have to sum to 1. However, the parameter space is less obvious especially because while continuous variables do not scale with the product space, discrete variables can and you have to be vigilant in recognizing that.</p>
+<p>What are the caveats here? There are many. First, we have primarily presented the identification arguments and intuition, but there is a whole other dimension related to whether this is an economically meaningful model. In this particular scenario, we can imagine that one clear omission from the utility function is that people also care about how much “stuff” they are buying, especially in this setting. People might like large quantities because it means they have more “stuff” to consume. We hope that we have given you an intuition on how to think about these additional dimensions because they will come up when you take off your identification hat and put on your economist hat.</p>
+<p>Another important caveat is that there are many other kinds of variation that we are clearly not utilizing. For example, you might have consumer-level choice data. As we have illustrated, none of that variation is necessary because you basically aggregate all of that data to market shares and solve for your parameters. That seems like an awful waste of valuable information. By our model’s construction, that data is not useful because we are assuming that all customers have the same preferences and any variation only comes through the error term, so there cannot be any other kind of systematic variation in consumers. This explicitly excludes any kind of useful information that we could extract from demographics, income, or even repeated purchases by the same customers. This also means any variation across markets can only be due to noise.</p>
+<p>In the next lecture, we will approach the question of how incorporate other kinds of data and what kinds of parameters we can identify as we try to build out a more realistic model of consumer behavior.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Already, we are making an assumption. Either (a) we are assuming that price, size, and brand are continuous so there’s only 3 parameters, (b) if brand is discrete, then we will only have 3 parameters if there are 2 brands. If we have B brands, then we have B-1 coefficients on those dummies. Already, we see that assumptions on whether your variables are discrete or continuous can get you into trouble. Be careful!↩︎</p></li>
+<li id="fn2"><p>Let’s be honest though. If you keep going, you’re just showing off at that point. There’s an elegance to choosing the simplest model for your needs and no simpler. No more complex either. It also has the added benefit of being accessible to a wider audience.↩︎</p></li>
+<li id="fn3"><p>Or your adviser. Probably your adviser.↩︎</p></li>
+<li id="fn4"><p>In an unrealistic scenario, if prices were the same between the two, then we could credibly identify size preferences, but that’s just as a result of shutting down the price channel. Also, there’s likely other issues in that it would make no sense for a small and a large package to be priced the same.↩︎</p></li>
+<li id="fn5"><p>We will assume a basic multinomial logit model where the error is iid Type 1 extreme value. Since the focus of this lecture is to develop intuition and not dig into the details of discrete choice or logit, the only fact you need to work through the math is that the market shares of each product can be represented as follows: <img src="https://latex.codecogs.com/png.latex?S_j%20=%20%5Cfrac%7Bexp(%5Calpha%20p_j%20+%20%5Cbeta%20size_j%20+%20%5Cgamma%20B_j)%7D%7B%5Csum_J%20exp(%5Calpha%20p_j%20+%20%5Cbeta%20size_j%20+%20%5Cgamma%20B_j)%7D">. What’s the intuition? We would expect that the market shares should be some function of the utility with items that give higher utility getting higher market shares. The extent that people deviate from picking the highest utility item is due to the <img src="https://latex.codecogs.com/png.latex?%5Cepsilon"> shocks. In a multinomial logit model, the shocks conveniently deliver the equation above. Like we said, even if you have not learned discrete choice, all you need is the market share equation.↩︎</p></li>
+<li id="fn6"><p>This actually leads to an interesting kernel of truth. If you think that people are only making a decision based on one continuous characteristic, like price, then the minimum amount of information you need is people making a choice between 2 products. That’s it. Honestly, you should never do this, because then you end up literally comparing apples and oranges only based on price. Why do people buy apples? They are cheaper! In the real world, there are a lot of other factors to consider as you are building your model. This is the “art” part of economics. The math tells you that you can estimate price sensitivity only based on observing choices between 2 products. However, experience tells you that people choose products based on a wide variety of characteristics and it is up to you as the economist to decide what are the important factors. If you think there is some underlying preference for apples relative to oranges, then as we outlined in Attempt 1, you will need more variation to estimate that.↩︎</p></li>
+</ol>
+</section></div> ]]></description>
+  <guid>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-01-Identification1/</guid>
+  <pubDate>Sat, 01 Aug 2020 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
