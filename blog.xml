@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>Mallick Hossain</title>
-<link>https://emallickhossain.github.io/mallickhossain-site/blog.html</link>
-<atom:link href="https://emallickhossain.github.io/mallickhossain-site/blog.xml" rel="self" type="application/rss+xml"/>
+<link>https://mallickhossain.com/blog.html</link>
+<atom:link href="https://mallickhossain.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
 <generator>quarto-1.8.25</generator>
 <lastBuildDate>Mon, 07 Sep 2020 04:00:00 GMT</lastBuildDate>
 <item>
   <title>FICA Taxes</title>
   <dc:creator>Mallick Hossain</dc:creator>
-  <link>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/</link>
+  <link>https://mallickhossain.com/posts/2020-08-15-fica-taxes/</link>
   <description><![CDATA[ 
 
 
@@ -26,7 +26,7 @@
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://mallickhossain.com/posts/2020-08-15-fica-taxes/index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -37,7 +37,7 @@
 <div class="cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="https://mallickhossain.com/posts/2020-08-15-fica-taxes/index_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
@@ -57,13 +57,13 @@
 <li id="fn3"><p>Honestly, I assumed everyone paid FICA, regardless of income.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-15-fica-taxes/</guid>
+  <guid>https://mallickhossain.com/posts/2020-08-15-fica-taxes/</guid>
   <pubDate>Mon, 07 Sep 2020 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Identification Pitfalls (Identification 2)</title>
   <dc:creator>Mallick Hossain</dc:creator>
-  <link>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-02-identification2/</link>
+  <link>https://mallickhossain.com/posts/2020-08-02-identification2/</link>
   <description><![CDATA[ 
 
 
@@ -110,13 +110,13 @@
 <li id="fn6"><p>This breaks the “density” equation that I outlined in an earlier footnote because more concentrated soaps pack more “cleaning power” per milliliter. For foods, it’s near-impossible to pack more “apple” into an apple (i.e.&nbsp;cramming 2 pounds of apple into 1 pound is impossible.). Different cuts of meat kind of break this, but then you have to deal with how the different cuts are of varying quality or require different amounts of work. For example, chicken thighs and boneless chicken thighs may weigh the same but have different quantities of meat. Boneless thighs take less work to prepare and cook though. This should still be identified though.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-02-identification2/</guid>
+  <guid>https://mallickhossain.com/posts/2020-08-02-identification2/</guid>
   <pubDate>Sun, 02 Aug 2020 04:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Identification and Prices (Identification 1)</title>
   <dc:creator>Mallick Hossain</dc:creator>
-  <link>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-01-Identification1/</link>
+  <link>https://mallickhossain.com/posts/2020-08-01-Identification1/</link>
   <description><![CDATA[ 
 
 
@@ -347,7 +347,7 @@
 <li id="fn6"><p>This actually leads to an interesting kernel of truth. If you think that people are only making a decision based on one continuous characteristic, like price, then the minimum amount of information you need is people making a choice between 2 products. That’s it. Honestly, you should never do this, because then you end up literally comparing apples and oranges only based on price. Why do people buy apples? They are cheaper! In the real world, there are a lot of other factors to consider as you are building your model. This is the “art” part of economics. The math tells you that you can estimate price sensitivity only based on observing choices between 2 products. However, experience tells you that people choose products based on a wide variety of characteristics and it is up to you as the economist to decide what are the important factors. If you think there is some underlying preference for apples relative to oranges, then as we outlined in Attempt 1, you will need more variation to estimate that.↩︎</p></li>
 </ol>
 </section></div> ]]></description>
-  <guid>https://emallickhossain.github.io/mallickhossain-site/posts/2020-08-01-Identification1/</guid>
+  <guid>https://mallickhossain.com/posts/2020-08-01-Identification1/</guid>
   <pubDate>Sat, 01 Aug 2020 04:00:00 GMT</pubDate>
 </item>
 </channel>
