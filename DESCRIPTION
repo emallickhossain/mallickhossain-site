@@ -1,0 +1,8 @@
+Package: mallickhossain-site
+Title: Personal Website
+Version: 1.0.0
+Imports:
+    ggplot2,
+    ggthemes,
+    data.table,
+    scales
