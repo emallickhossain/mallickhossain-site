@@ -9,8 +9,8 @@
 <link>https://mallickhossain.com/blog.html</link>
 <atom:link href="https://mallickhossain.com/blog.xml" rel="self" type="application/rss+xml"/>
 <description></description>
-<generator>quarto-1.8.25</generator>
-<lastBuildDate>Mon, 07 Sep 2020 04:00:00 GMT</lastBuildDate>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Mon, 07 Sep 2020 00:00:00 GMT</lastBuildDate>
 <item>
   <title>FICA Taxes</title>
   <dc:creator>Mallick Hossain</dc:creator>
@@ -58,7 +58,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://mallickhossain.com/posts/2020-08-15-fica-taxes/</guid>
-  <pubDate>Mon, 07 Sep 2020 04:00:00 GMT</pubDate>
+  <pubDate>Mon, 07 Sep 2020 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Identification Pitfalls (Identification 2)</title>
@@ -111,7 +111,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://mallickhossain.com/posts/2020-08-02-identification2/</guid>
-  <pubDate>Sun, 02 Aug 2020 04:00:00 GMT</pubDate>
+  <pubDate>Sun, 02 Aug 2020 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Identification and Prices (Identification 1)</title>
@@ -348,7 +348,7 @@
 </ol>
 </section></div> ]]></description>
   <guid>https://mallickhossain.com/posts/2020-08-01-Identification1/</guid>
-  <pubDate>Sat, 01 Aug 2020 04:00:00 GMT</pubDate>
+  <pubDate>Sat, 01 Aug 2020 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
