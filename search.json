@@ -1,38 +1,17 @@
 [
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "posts/2020-08-02-identification2/index.html",
+    "href": "posts/2020-08-02-identification2/index.html",
+    "title": "Identification Pitfalls (Identification 2)",
     "section": "",
-    "text": "Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (R&R at American Journal of Preventive Medicine)\nwith Emma Dean and Daniel Kaliski, 2024\nSSRN\nPricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability\nwith Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill, 2024\nSSRN\nMedia: Bloomberg NYTimesInvestopedia\nCalifornia Wildfires, Property Damage, and Mortgage Repayment (R&R at Journal of Political Economy Microeconomics)\nwith Siddhartha Biswas and David Zink, 2023\nPhiladelphia Fed Working Paper\nMedia: Bloomberg Bloomberg TV WSJ American Banker Yahoo News LA Times Digital Insurance Honolulu Civil Beat\nFlood Risk Exposures and Mortgage-Backed Security Asset Performance and Risk Sharing\nwith Jacob Dice and David Rodziewicz, 2024\nKC Fed Working Paper\nLess is More Expensive: Bulk Buying and Cognitive Costs (R&R at International Economic Review)\nwith Christoph Bauner, 2025\nWorking Paper\nMedia: Chicago Booth Review"
+    "text": "In the last lecture, we discussed the intuition for how to identify preference parameters of a utility function. We briefly touched on the importance of stepping back from your identified model to see if the model actually makes sense or if there is something important that is missing. We highlighted one important omission from Alice’s price/size/brand utility function and we will spend this lecture exploring the underlying assumptions and insights."
   },
   {
-    "objectID": "research.html#working-papers",
-    "href": "research.html#working-papers",
-    "title": "Research",
-    "section": "",
-    "text": "Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (R&R at American Journal of Preventive Medicine)\nwith Emma Dean and Daniel Kaliski, 2024\nSSRN\nPricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability\nwith Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill, 2024\nSSRN\nMedia: Bloomberg NYTimesInvestopedia\nCalifornia Wildfires, Property Damage, and Mortgage Repayment (R&R at Journal of Political Economy Microeconomics)\nwith Siddhartha Biswas and David Zink, 2023\nPhiladelphia Fed Working Paper\nMedia: Bloomberg Bloomberg TV WSJ American Banker Yahoo News LA Times Digital Insurance Honolulu Civil Beat\nFlood Risk Exposures and Mortgage-Backed Security Asset Performance and Risk Sharing\nwith Jacob Dice and David Rodziewicz, 2024\nKC Fed Working Paper\nLess is More Expensive: Bulk Buying and Cognitive Costs (R&R at International Economic Review)\nwith Christoph Bauner, 2025\nWorking Paper\nMedia: Chicago Booth Review"
-  },
-  {
-    "objectID": "research.html#journal-publications",
-    "href": "research.html#journal-publications",
-    "title": "Research",
-    "section": "Journal Publications",
-    "text": "Journal Publications\nNot Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates\nwith Igor Livshits and Collin Wardius\nAccepted at Real Estate Economics, 2026\nJournal Working Paper\nMedia: Philadelaphia Fed Research in Focus\nUsing Administrative Data to Examine Telemedicine Usage Among Medicaid Beneficiaries During the Coronavirus Disease 2019 Pandemic\nwith Emma B Dean and Daniel Kaliski\nMedical Care 60(7), 488-495, 2022\nJournal\nAmazon Without Borders Revisited: Impact of Online Sales Tax Collection on Shopping and Search\nJournal of Economics & Management Strategy 31(1), 48-63, 2022\nJournal Working Paper"
-  },
-  {
-    "objectID": "research.html#other-publications",
-    "href": "research.html#other-publications",
-    "title": "Research",
-    "section": "Other Publications",
-    "text": "Other Publications\nTiming of Flood Insurance Payments\nwith John Orellana-Li\nFederal Reserve Bank of Philadelphia Research Brief (2024)\nLink\nReproducibility in Management Science\nwith Miloš Fišar, Ben Greiner, Christoph Huber, Elena Katok, Ali I. Ozkes, and the Management Science Reproducibility Collaboration (member) Management Science\nJournal\nCredit Card Trends During the COVID-19 Pandemic\nFederal Reserve Bank of Philadelphia Supervisory Research Forum Spotlight (2021 Q4)\nLink\nIs Credit Card Forbearance Worth It?\nwith Xudong An, Larry Cordell, Erik Dolson, and Nilim Roy\nFederal Reserve Bank of Philadelphia SRC Research Brief (2021)"
-  },
-  {
-    "objectID": "research.html#resting-working-papers",
-    "href": "research.html#resting-working-papers",
-    "title": "Research",
-    "section": "Resting Working Papers",
-    "text": "Resting Working Papers\nMade from Scratch: How SNAP Benefits Affect Lottery Sales\nwith Jason Sockin, 2021"
+    "objectID": "posts/2020-08-02-identification2/index.html#footnotes",
+    "href": "posts/2020-08-02-identification2/index.html#footnotes",
+    "title": "Identification Pitfalls (Identification 2)",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nArguably, the following paragraph is probably one of the most important skills of an economist and for you on the job market. Honestly, everyone knows your model is not perfect and probably pretty bad. You probably know your model is not perfect and pretty bad. However, it is good for something. You need to know what that something is. Also, people are going to ask why your model doesn’t reflect the real world, often by giving some personal story. In most cases (assuming you’ve done some decently careful work on your own model), they are not asking you to add in their particular feature into your model. And you probably should not if your object of interest is something very different. However, what they are asking is for you to have carefully thought about how that omission could affect your model. Will it weaken your results? If so, then assuming you got something significant, then you have still demonstrated your story has value. Will it bias your results upward? Then you might be getting significance where there is none. You would want to think carefully about how strong this bias might be, or maybe this is a case where you should directly incorporate this feature into your model to remove the risk of identifying something that is not there. This is an extremely valuable skill to have and not one explicitly taught in graduate school.↩︎\nYes, the following intuition is just a discussion of omitted variable bias. You will never escape it.↩︎\nTo the extent that both of these coefficients are likely negative, this would be downward biasing our results, because it is making the absolute magnitude smaller. However, it is pushing our results upward from a more negative number. Remember a smaller negative is a bigger number.↩︎\nActually, using some basic physics/chemistry, you can construct the exact relationship. An object’s density is defined as its mass per unit volume (\\(\\rho = \\frac{m}{V}\\)). Density is an unchanging physical property of an object, so the relationship between the quantity of an object, or its mass is just the density times the volume. Put in our economic notation, \\(q = \\rho * V\\). Here we actually have perfect multicollinearity. If we were buying blocks of gold, this would be the case. For other products, there is often some kind of packaging that doesn’t scale precisely with the quantity, but it would be close enough to generate a highly correlated relationship.↩︎\nThis is an important skill to have. While painful, you should try to kill your ideas as quickly as possible. If it survives, then it’s probably a good one to research.↩︎\nThis breaks the “density” equation that I outlined in an earlier footnote because more concentrated soaps pack more “cleaning power” per milliliter. For foods, it’s near-impossible to pack more “apple” into an apple (i.e. cramming 2 pounds of apple into 1 pound is impossible.). Different cuts of meat kind of break this, but then you have to deal with how the different cuts are of varying quality or require different amounts of work. For example, chicken thighs and boneless chicken thighs may weigh the same but have different quantities of meat. Boneless thighs take less work to prepare and cook though. This should still be identified though.↩︎"
   },
   {
     "objectID": "posts/2020-08-01-Identification1/index.html",
@@ -68,6 +47,13 @@
     "title": "Identification and Prices (Identification 1)",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nAlready, we are making an assumption. Either (a) we are assuming that price, size, and brand are continuous so there’s only 3 parameters, (b) if brand is discrete, then we will only have 3 parameters if there are 2 brands. If we have B brands, then we have B-1 coefficients on those dummies. Already, we see that assumptions on whether your variables are discrete or continuous can get you into trouble. Be careful!↩︎\nLet’s be honest though. If you keep going, you’re just showing off at that point. There’s an elegance to choosing the simplest model for your needs and no simpler. No more complex either. It also has the added benefit of being accessible to a wider audience.↩︎\nOr your adviser. Probably your adviser.↩︎\nIn an unrealistic scenario, if prices were the same between the two, then we could credibly identify size preferences, but that’s just as a result of shutting down the price channel. Also, there’s likely other issues in that it would make no sense for a small and a large package to be priced the same.↩︎\nWe will assume a basic multinomial logit model where the error is iid Type 1 extreme value. Since the focus of this lecture is to develop intuition and not dig into the details of discrete choice or logit, the only fact you need to work through the math is that the market shares of each product can be represented as follows: \\(S_j = \\frac{exp(\\alpha p_j + \\beta size_j + \\gamma B_j)}{\\sum_J exp(\\alpha p_j + \\beta size_j + \\gamma B_j)}\\). What’s the intuition? We would expect that the market shares should be some function of the utility with items that give higher utility getting higher market shares. The extent that people deviate from picking the highest utility item is due to the \\(\\epsilon\\) shocks. In a multinomial logit model, the shocks conveniently deliver the equation above. Like we said, even if you have not learned discrete choice, all you need is the market share equation.↩︎\nThis actually leads to an interesting kernel of truth. If you think that people are only making a decision based on one continuous characteristic, like price, then the minimum amount of information you need is people making a choice between 2 products. That’s it. Honestly, you should never do this, because then you end up literally comparing apples and oranges only based on price. Why do people buy apples? They are cheaper! In the real world, there are a lot of other factors to consider as you are building your model. This is the “art” part of economics. The math tells you that you can estimate price sensitivity only based on observing choices between 2 products. However, experience tells you that people choose products based on a wide variety of characteristics and it is up to you as the economist to decide what are the important factors. If you think there is some underlying preference for apples relative to oranges, then as we outlined in Attempt 1, you will need more variation to estimate that.↩︎"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "FICA Taxes\n\n\n\n\n\n\n\n\nSep 7, 2020\n\n\nMallick Hossain\n\n\n\n\n\n\n\n\n\n\n\n\nIdentification Pitfalls (Identification 2)\n\n\n\n\n\n\n\n\nAug 2, 2020\n\n\nMallick Hossain\n\n\n\n\n\n\n\n\n\n\n\n\nIdentification and Prices (Identification 1)\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\nMallick Hossain\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "teaching.html",
@@ -207,28 +193,42 @@
     "href": "index.html#recent-research",
     "title": "Mallick Hossain",
     "section": "Recent Research",
-    "text": "Recent Research\n\nPricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability (with Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill) was cited by the NYTimes and Investopedia!\nNot Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates (Accepted at Real Estate Economics) (with Igor Livshis and Collin Wardius)\n\nSee all research →"
+    "text": "Recent Research\n\nDoes Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts is conditionally accepted at American Journal of Preventive Medicine!\nPricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability (with Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill) was cited by the NYTimes and Investopedia!\nNot Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates (Accepted at Real Estate Economics) (with Igor Livshis and Collin Wardius)\n\nSee all research →"
   },
   {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "FICA Taxes\n\n\n\n\n\n\n\n\nSep 7, 2020\n\n\nMallick Hossain\n\n\n\n\n\n\n\n\n\n\n\n\nIdentification Pitfalls (Identification 2)\n\n\n\n\n\n\n\n\nAug 2, 2020\n\n\nMallick Hossain\n\n\n\n\n\n\n\n\n\n\n\n\nIdentification and Prices (Identification 1)\n\n\n\n\n\n\n\n\nAug 1, 2020\n\n\nMallick Hossain\n\n\n\n\n\nNo matching items"
+    "text": "Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (Conditionally Accepted at American Journal of Preventive Medicine)\nwith Emma Dean and Daniel Kaliski, 2024\nSSRN\nPricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability\nwith Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill, 2024\nSSRN\nMedia: Bloomberg NYTimesInvestopedia\nCalifornia Wildfires, Property Damage, and Mortgage Repayment (R&R at Journal of Political Economy Microeconomics)\nwith Siddhartha Biswas and David Zink, 2023\nPhiladelphia Fed Working Paper\nMedia: Bloomberg Bloomberg TV WSJ American Banker Yahoo News LA Times Digital Insurance Honolulu Civil Beat\nFlood Risk Exposures and Mortgage-Backed Security Asset Performance and Risk Sharing\nwith Jacob Dice and David Rodziewicz, 2024\nKC Fed Working Paper\nLess is More Expensive: Bulk Buying and Cognitive Costs (R&R at International Economic Review)\nwith Christoph Bauner, 2025\nWorking Paper\nMedia: Chicago Booth Review"
   },
   {
-    "objectID": "posts/2020-08-02-identification2/index.html",
-    "href": "posts/2020-08-02-identification2/index.html",
-    "title": "Identification Pitfalls (Identification 2)",
+    "objectID": "research.html#working-papers",
+    "href": "research.html#working-papers",
+    "title": "Research",
     "section": "",
-    "text": "In the last lecture, we discussed the intuition for how to identify preference parameters of a utility function. We briefly touched on the importance of stepping back from your identified model to see if the model actually makes sense or if there is something important that is missing. We highlighted one important omission from Alice’s price/size/brand utility function and we will spend this lecture exploring the underlying assumptions and insights."
+    "text": "Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (Conditionally Accepted at American Journal of Preventive Medicine)\nwith Emma Dean and Daniel Kaliski, 2024\nSSRN\nPricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability\nwith Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill, 2024\nSSRN\nMedia: Bloomberg NYTimesInvestopedia\nCalifornia Wildfires, Property Damage, and Mortgage Repayment (R&R at Journal of Political Economy Microeconomics)\nwith Siddhartha Biswas and David Zink, 2023\nPhiladelphia Fed Working Paper\nMedia: Bloomberg Bloomberg TV WSJ American Banker Yahoo News LA Times Digital Insurance Honolulu Civil Beat\nFlood Risk Exposures and Mortgage-Backed Security Asset Performance and Risk Sharing\nwith Jacob Dice and David Rodziewicz, 2024\nKC Fed Working Paper\nLess is More Expensive: Bulk Buying and Cognitive Costs (R&R at International Economic Review)\nwith Christoph Bauner, 2025\nWorking Paper\nMedia: Chicago Booth Review"
   },
   {
-    "objectID": "posts/2020-08-02-identification2/index.html#footnotes",
-    "href": "posts/2020-08-02-identification2/index.html#footnotes",
-    "title": "Identification Pitfalls (Identification 2)",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nArguably, the following paragraph is probably one of the most important skills of an economist and for you on the job market. Honestly, everyone knows your model is not perfect and probably pretty bad. You probably know your model is not perfect and pretty bad. However, it is good for something. You need to know what that something is. Also, people are going to ask why your model doesn’t reflect the real world, often by giving some personal story. In most cases (assuming you’ve done some decently careful work on your own model), they are not asking you to add in their particular feature into your model. And you probably should not if your object of interest is something very different. However, what they are asking is for you to have carefully thought about how that omission could affect your model. Will it weaken your results? If so, then assuming you got something significant, then you have still demonstrated your story has value. Will it bias your results upward? Then you might be getting significance where there is none. You would want to think carefully about how strong this bias might be, or maybe this is a case where you should directly incorporate this feature into your model to remove the risk of identifying something that is not there. This is an extremely valuable skill to have and not one explicitly taught in graduate school.↩︎\nYes, the following intuition is just a discussion of omitted variable bias. You will never escape it.↩︎\nTo the extent that both of these coefficients are likely negative, this would be downward biasing our results, because it is making the absolute magnitude smaller. However, it is pushing our results upward from a more negative number. Remember a smaller negative is a bigger number.↩︎\nActually, using some basic physics/chemistry, you can construct the exact relationship. An object’s density is defined as its mass per unit volume (\\(\\rho = \\frac{m}{V}\\)). Density is an unchanging physical property of an object, so the relationship between the quantity of an object, or its mass is just the density times the volume. Put in our economic notation, \\(q = \\rho * V\\). Here we actually have perfect multicollinearity. If we were buying blocks of gold, this would be the case. For other products, there is often some kind of packaging that doesn’t scale precisely with the quantity, but it would be close enough to generate a highly correlated relationship.↩︎\nThis is an important skill to have. While painful, you should try to kill your ideas as quickly as possible. If it survives, then it’s probably a good one to research.↩︎\nThis breaks the “density” equation that I outlined in an earlier footnote because more concentrated soaps pack more “cleaning power” per milliliter. For foods, it’s near-impossible to pack more “apple” into an apple (i.e. cramming 2 pounds of apple into 1 pound is impossible.). Different cuts of meat kind of break this, but then you have to deal with how the different cuts are of varying quality or require different amounts of work. For example, chicken thighs and boneless chicken thighs may weigh the same but have different quantities of meat. Boneless thighs take less work to prepare and cook though. This should still be identified though.↩︎"
+    "objectID": "research.html#journal-publications",
+    "href": "research.html#journal-publications",
+    "title": "Research",
+    "section": "Journal Publications",
+    "text": "Journal Publications\nNot Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates\nwith Igor Livshits and Collin Wardius\nAccepted at Real Estate Economics, 2026\nJournal Working Paper\nMedia: Philadelaphia Fed Research in Focus\nUsing Administrative Data to Examine Telemedicine Usage Among Medicaid Beneficiaries During the Coronavirus Disease 2019 Pandemic\nwith Emma B Dean and Daniel Kaliski\nMedical Care 60(7), 488-495, 2022\nJournal\nAmazon Without Borders Revisited: Impact of Online Sales Tax Collection on Shopping and Search\nJournal of Economics & Management Strategy 31(1), 48-63, 2022\nJournal Working Paper"
+  },
+  {
+    "objectID": "research.html#other-publications",
+    "href": "research.html#other-publications",
+    "title": "Research",
+    "section": "Other Publications",
+    "text": "Other Publications\nTiming of Flood Insurance Payments\nwith John Orellana-Li\nFederal Reserve Bank of Philadelphia Research Brief (2024)\nLink\nReproducibility in Management Science\nwith Miloš Fišar, Ben Greiner, Christoph Huber, Elena Katok, Ali I. Ozkes, and the Management Science Reproducibility Collaboration (member) Management Science\nJournal\nCredit Card Trends During the COVID-19 Pandemic\nFederal Reserve Bank of Philadelphia Supervisory Research Forum Spotlight (2021 Q4)\nLink\nIs Credit Card Forbearance Worth It?\nwith Xudong An, Larry Cordell, Erik Dolson, and Nilim Roy\nFederal Reserve Bank of Philadelphia SRC Research Brief (2021)"
+  },
+  {
+    "objectID": "research.html#resting-working-papers",
+    "href": "research.html#resting-working-papers",
+    "title": "Research",
+    "section": "Resting Working Papers",
+    "text": "Resting Working Papers\nMade from Scratch: How SNAP Benefits Affect Lottery Sales\nwith Jason Sockin, 2021"
   },
   {
     "objectID": "posts/2020-08-15-fica-taxes/index.html",
