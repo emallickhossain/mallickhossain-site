@@ -4,7 +4,7 @@ title: "Research"
 
 ## Working Papers
 
-**Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (R&R at *American Journal of Preventive Medicine*)**  
+**Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (Conditionally Accepted at *American Journal of Preventive Medicine*)**  
 with Emma Dean and Daniel Kaliski, 2024  
 [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4728112)
 
