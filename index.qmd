@@ -30,7 +30,7 @@ I am a senior financial economist at the Federal Reserve Bank of Philadelphia. M
 *The views expressed here are my own and do not necessarily represent the views of the Federal Reserve Bank of Philadelphia or the Federal Reserve System.*
 
 ## Recent Research
-- **Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts** is conditionally accepted at *American Journal of Preventive Medicine*!
+- **Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts** is published at the [*American Journal of Preventive Medicine*](https://authors.elsevier.com/sd/article/S0749-3797(26)00110-8)!
 - [Pricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5026600) (with Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill) was cited by the [NYTimes](https://www.nytimes.com/interactive/2026/03/09/climate/home-insurance-credit-scores.html) and [Investopedia](https://www.investopedia.com/a-surprising-way-your-credit-score-could-be-costing-you-more-11924703)!
 - [Not Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates (Accepted at *Real Estate Economics*)](http://doi.org/10.1111/1540-6229.70031) (with Igor Livshis and Collin Wardius)
 

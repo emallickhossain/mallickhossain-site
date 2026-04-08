@@ -4,10 +4,6 @@ title: "Research"
 
 ## Working Papers
 
-**Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (Conditionally Accepted at *American Journal of Preventive Medicine*)**  
-with Emma Dean and Daniel Kaliski, 2024  
-[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4728112)
-
 **Pricing Protection: Credit Scores, Disaster Risk, and Home Insurance Affordability**  
 with Joshua Blonz, Ben Keys, Philip Mulder, and Joakim Weill, 2024  
 [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5026600)  
@@ -30,6 +26,9 @@ Media: [Chicago Booth Review](https://review.chicagobooth.edu/economics/2020/art
 
 
 ## Journal Publications
+**Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (Conditionally Accepted at *American Journal of Preventive Medicine*)**  
+with Emma Dean and Daniel Kaliski, 2024  
+[Journal](https://authors.elsevier.com/sd/article/S0749-3797(26)00110-8)[Working Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4728112)
 
 **Not Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates**  
 with Igor Livshits and Collin Wardius  
