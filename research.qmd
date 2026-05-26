@@ -26,13 +26,14 @@ Media: [Chicago Booth Review](https://review.chicagobooth.edu/economics/2020/art
 
 
 ## Journal Publications
-**Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts (Conditionally Accepted at *American Journal of Preventive Medicine*)**  
-with Emma Dean and Daniel Kaliski, 2024  
+**Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts**  
+with Emma Dean and Daniel Kaliski, 2026
+*American Journal of Preventive Medicine*
 [Journal](https://authors.elsevier.com/sd/article/S0749-3797(26)00110-8)[Working Paper](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4728112)
 
 **Not Cashing In on Cashing Out: An Analysis of Low Cash-Out Refinance Rates**  
 with Igor Livshits and Collin Wardius  
-*Accepted at Real Estate Economics*, 2026  
+*Real Estate Economics*, 2026  
 [Journal](http://doi.org/10.1111/1540-6229.70031) [Working Paper](https://www.philadelphiafed.org/consumer-finance/consumer-credit/not-cashing-in-on-cashing-out-an-analysis-of-low-cash-out-refinance-rates)  
 Media: [Philadelaphia Fed Research in Focus](https://www.philadelphiafed.org/consumer-finance/consumer-credit/revisiting-an-overlooked-strategy-for-reducing-interest-on-personal-debt)
 
