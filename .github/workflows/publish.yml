@@ -25,9 +25,8 @@ jobs:
       - name: Install R packages
         shell: Rscript {0}
         run: |
-          install.packages(c("ggplot2", "knitr", "rmarkdown", "ggthemes", "data.table", "scales"),
-                           repos = "https://cloud.r-project.org",
-                           dependencies = TRUE)
+          install.packages("pak", repos = "https://cloud.r-project.org")
+          pak::pak(c("ggplot2", "knitr", "rmarkdown", "ggthemes", "data.table", "scales"))
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
