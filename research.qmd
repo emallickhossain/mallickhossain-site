@@ -14,16 +14,18 @@ with Siddhartha Biswas and David Zink, 2023
 [Philadelphia Fed Working Paper](https://www.philadelphiafed.org/consumer-finance/mortgage-markets/california-wildfires-property-damage-and-mortgage-repayment)  
 Media: [Bloomberg](https://www.bloomberg.com/news/articles/2025-01-15/california-s-insurance-crisis-la-fires-payouts-and-long-term-impact) [Bloomberg TV](https://iqmediacorp.com/ExternalIframeMedia/?mediaID=44d6c710-a92d-486e-9bbd-ceac88980b69&isRM=false) [WSJ](https://www.wsj.com/personal-finance/mortgages/los-angeles-fires-burned-homes-mortgage-payments-a5b7d5bb) [American Banker](https://asreport.americanbanker.com/news/rmbs-market-ready-to-cope-with-los-angeles-wildfires) [Yahoo News](https://www.yahoo.com/news/homeowners-devastated-wildfires-now-facing-104533615.html) [LA Times](https://www.latimes.com/wildfire-recovery/government-resources/story/calassist-mortgage-aid-disaster-survivors) [Digital Insurance](https://www.dig-in.com/news/regulator-starts-task-force-to-address-la-fire-smoke-claims) [Honolulu Civil Beat](https://www.google.com/url?q=https://www.civilbeat.org/2025/07/insurance-deadline-looms-two-weeks-maui-fire-victims/&source=gmail&ust=1753542862213000&usg=AOvVaw0nVk0759xjvRkJfQTm3qLU)
 
-**Flood Risk Exposures and Mortgage-Backed Security Asset Performance and Risk Sharing**  
-with Jacob Dice and David Rodziewicz, 2024  
-[KC Fed Working Paper](https://www.kansascityfed.org/research/research-working-papers/flood-risk-exposures-and-mortgage-backed-security-asset-performance-and-risk-sharing/)
+**Premiums or Peril? The Impact of Weather Risk on Residential Real Estate Markets in Florida**  
+with Erik Heitfield and Katie Merritt, 2026
+[Working Paper](https://www.federalreserve.gov/econres/feds/premiums-or-peril.htm)  
 
 **Less is More Expensive: Bulk Buying and Cognitive Costs (R&R at *International Economic Review*)**  
 with Christoph Bauner, 2025  
 [Working Paper](/files/BulkBuyingCogCosts.pdf)  
 Media: [Chicago Booth Review](https://review.chicagobooth.edu/economics/2020/article/why-low-income-families-miss-out-bulk-buying)
 
-
+**Flood Risk Exposures and Mortgage-Backed Security Asset Performance and Risk Sharing**  
+with Jacob Dice and David Rodziewicz, 2024  
+[KC Fed Working Paper](https://www.kansascityfed.org/research/research-working-papers/flood-risk-exposures-and-mortgage-backed-security-asset-performance-and-risk-sharing/)
 
 ## Journal Publications
 **Does Algorithmic Risk Assessment Affect Physician Prescribing? Understanding Aggregate Versus Micro-Level Impacts**  
